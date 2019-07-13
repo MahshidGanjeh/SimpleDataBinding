@@ -121,6 +121,9 @@
         <ProgressBar
                 android:id="@+id/progressBar"
                 style="?android:attr/progressBarStyleHorizontal"
+                app:hideIfZero="@{personViewModel.likes}"
+                app:progressScaled="@{personViewModel.likes}"
+                android:max="@{100}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
